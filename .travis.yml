@@ -1,0 +1,10 @@
+language: python
+python:
+    - "2.7"
+
+script: bash ./deploy.sh
+
+env:
+    global:
+        - ENCRYPTION_LABEL: "3c8129df72fa"
+        - COMMIT_AUTHOR_EMAIL: "firez199984@gmail.com"
