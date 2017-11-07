@@ -1,4 +1,4 @@
-﻿var direct = "__DIRECT__";
+var direct = "__DIRECT__";
 if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
 
 var wall_proxy = function(){ return "__PROXY__"; };
