@@ -12,9 +12,6 @@ def parse_args():
 		help='path to gfwlist')
 	parser.add_argument('-o', '--output', dest='output', default='whitelist.pac',
 		help='path to output pac', metavar='PAC')
-	parser.add_argument('-p', '--proxy', dest='proxy', default='"SOCKS5 127.0.0.1:1080; SOCKS 127.0.0.1:1080;"',
-		help='the proxy parameter in the pac file, for example,\
-		"127.0.0.1:1080;"', metavar='SOCKS5')
 	return parser.parse_args()
 
 def get_file_data(filename):
@@ -23,13 +20,12 @@ def get_file_data(filename):
 		content = file_obj.read()
 	return content
 
-def writefile(input_file, proxy, output_file):
+def writefile(input_file, output_file):
 	ip_content = list_ip.final_list()
 	ip16_content = list_ip.center_list()
 	fake_ip_content = list_ip.fake_list()
 	domains_content = list_white.final_list()
 	proxy_content = get_file_data(input_file)
-	proxy_content = proxy_content.replace('__PROXY__', proxy)
 	proxy_content = proxy_content.replace('__DOMAINS__', domains_content)
 	proxy_content = proxy_content.replace('__IP_LIST__', ip_content)
 	proxy_content = proxy_content.replace('__IP16_LIST__', ip16_content)
@@ -39,7 +35,7 @@ def writefile(input_file, proxy, output_file):
 
 def main():
 	args = parse_args()
-	writefile(args.input, '"' + args.proxy.strip('"') + '"', args.output)
+	writefile(args.input, args.output)
 
 if __name__ == '__main__':
 	main()
