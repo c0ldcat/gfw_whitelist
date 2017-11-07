@@ -3,5 +3,6 @@
 
 def getlist():
     liststr = """
+live.com
 """
     return set(liststr.splitlines(False))
