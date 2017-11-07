@@ -3,6 +3,7 @@
 
 def getlist():
     liststr = """
-live.com
+live.net
+onenote.com
 """
     return set(liststr.splitlines(False))
