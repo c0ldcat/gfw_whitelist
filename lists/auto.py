@@ -3982,10 +3982,6 @@ goocun.com
 goodacc.net
 goodbaby.com
 goodkejian.com
-google-analytics.com
-googleadservices.com
-googlesyndication.com
-googletagmanager.com
 googvv.com
 gooioo.com
 gooniu.com
