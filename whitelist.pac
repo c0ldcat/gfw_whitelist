@@ -4493,6 +4493,7 @@ var white_domains = {"am":{
 "jiankongbao":1,
 "jianli-sky":1,
 "jianshe99":1,
+"jianshu":1,
 "jianso":1,
 "jianzhi8":1,
 "jianzhiabc":1,
