@@ -5,5 +5,6 @@ def getlist():
     liststr = """
 live.net
 onenote.com
+jianshu.com
 """
     return set(liststr.splitlines(False))
