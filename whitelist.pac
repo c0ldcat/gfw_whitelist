@@ -5065,6 +5065,7 @@ var white_domains = {"am":{
 "liuxue3600":1,
 "liuxue86":1,
 "liuxueca":1,
+"live":1,
 "live754":1,
 "live800":1,
 "livnj":1,
