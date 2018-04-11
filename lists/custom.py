@@ -9,5 +9,6 @@ jianshu.com
 c0ldcat.cc
 tenxcloud.com
 docker-cn.com
+live.com
 """
     return set(liststr.splitlines(False))
